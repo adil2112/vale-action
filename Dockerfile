@@ -5,6 +5,7 @@ RUN apk add --no-cache --update nodejs nodejs-npm git
 
 COPY lib /lib
 COPY package.json /package.json
+COPY package-lock.json /package-lock.json
 
 RUN npm install
 
