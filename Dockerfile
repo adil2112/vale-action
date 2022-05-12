@@ -6,6 +6,6 @@ RUN apk add --no-cache --update nodejs nodejs-npm git
 COPY lib /lib
 COPY package.json /package.json
 
-RUN npm install --production
+RUN npm install
 
 ENTRYPOINT ["node", "/lib/main.js"]
